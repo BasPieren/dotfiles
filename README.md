@@ -3,48 +3,85 @@
 This is a repo for my personal dotfiles.
 
 ## Table of Contents 🗃
-* [To Do](#to-do-)
 * [Description](#description-)
-* [Installing](#installing-)
-  * [Packages and Technologies](#packages-and-technologies)
-* [API](#api-)
-* [Research](#research-)
-* [Concept](#concept-)
-* [UI Design](#ui-design-)
 * [How It Works](#how-it-works-️)
+  * [Custom Prompt](#custom-prompt)
+  * [GIT](#git)
+  * [New Project](#new-project)
+  * [Directories](#directories)
+  * [Python SimpleHTTPServer](#python-simplehttpserver)
 * [Sources](#sources-)
   * [Honourable Mentions](#honourable-mentions)
 * [Licence](#licence-)
 
-## To Do 📌
-This is a list of things I want to do in this project:
-
-- [ ] .
-
 ## Description 📝
-*Here goes the description of a project.*
+This are exports, aliases and scripts to customize my bash terminal.
 
-## Installing 🔍
-To install this application enter the following into your terminal:
+## How It Works 🛠️
+Here I explain the core features of my dotfiles.
+
+### Custom Prompt
+Customizes my command prompt.
 ```
-git clone https://github.com/BasPieren/readme-template.git
+export PS1="🤖  \033[0;36m[\u] \d \e[0m \033[1m\w\e[0m $ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
-cd readme-template
+alias ls='ls -GFh'
 ```
 
-### Packages and Technologies
-This project makes use of the following packages and technologies:
+![Imgur](https://i.imgur.com/wMTFWJo.png)
 
-  * None!
+### GIT
+Aliases for git commands.
+```
+alias gitS="git status"
+
+alias gitA="git add"
+
+alias gitC="git commit -m"
+
+alias gitP="git push"
+```
+
+### New Project
+Setup a client side project structure.
+```
+new-project-c
+```
+Setup a server side project structure.
+```
+new-project-s
+```
+
+### Directories
+Aliases for quick directory navigation.
+```
+alias cdP="cd Documents/Persoonlijk/projects"
+
+alias cd1="cd Documents/school/hva/1e\ jaar/"
+
+alias cd2="cd documents/school/hva/2e\ jaar/"
+
+alias cd3="cd documents/school/hva/3e\ jaar/"
+
+alias cd4="cd documents/school/hva/4e\ jaar/"
+```
+
+### Python SimpleHTTPServer
+
+```
+alias pS3000="python -m SimpleHTTPServer 3000"
+```
 
 ## Sources 📚
-This is a list of all the sources I used during this project:
+This is a list of all the sources I used for my dotfiles:
 
   * None!
 
 ### Honourable Mentions
 
-  * None!
+  * [Jeroen van Berkum](https://github.com/jeroenvb/)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
